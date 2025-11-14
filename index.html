@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JI.TECH - FAST AND EASY WAY TO RENT A CAR</title>
-  <meta name="description" content="JI.TECH Rental Mobil Batam - Sewa Mobil Murah, Tour & Travel, Armada Terbaru, Harga Terjangkau">
+  <title>MR.BUDDY - FAST AND EASY WAY TO RENT A CAR</title>
+  <meta name="description" content="MR.BUDDY Rental Mobil Batam - Sewa Mobil Murah, Tour & Travel, Armada Terbaru, Harga Terjangkau">
   <!-- PAKAI CDN UNTUK SEMUA -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -12,7 +12,7 @@
     html { scroll-behavior: smooth; }
     .hero-bg {
       background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                  url('https://images.unsplash.com/photo-1605559424843-9f7c84b1b4b2?auto=format&fit=crop&w=1950&q=80');
+                  url('images/hero/background.jpg');
       background-size: cover;
       background-position: center;
     }
@@ -20,6 +20,17 @@
       transform: translateY(-5px); 
       transition: 0.3s; 
       box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+    }
+    .destination-card:hover {
+      transform: scale(1.03);
+      transition: 0.3s;
+    }
+    .visited-card {
+      transition: all 0.3s ease;
+    }
+    .visited-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     }
   </style>
 </head>
@@ -29,11 +40,11 @@
     <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
       <div class="flex items-center space-x-2">
         <div class="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
-          <span class="font-bold text-white">JT</span>
+          <span class="font-bold text-white">MB</span>
         </div>
         <div>
-          <h1 class="text-xl font-bold text-blue-400">JI.TECH</h1>
-          <p class="text-xs text-gray-400">Travel & Rent Car</p>
+          <h1 class="text-xl font-bold text-blue-400">MR.BUDDY</h1>
+          <p class="text-xs text-gray-400">Transport Batam</p>
         </div>
       </div>
       
@@ -42,6 +53,7 @@
         <a href="#about" class="hover:text-blue-400 font-medium">Tentang</a>
         <a href="#services" class="hover:text-blue-400 font-medium">Layanan</a>
         <a href="#cars" class="hover:text-blue-400 font-medium">Armada</a>
+        <a href="#destinations" class="hover:text-blue-400 font-medium">Destinasi</a>
         <a href="#contact" class="hover:text-blue-400 font-medium">Kontak</a>
       </nav>
 
@@ -63,7 +75,7 @@
         Melayani Sewa Mobil, Tour & Travel dengan Armada Terbaru, Driver Profesional, dan Harga Terjangkau
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="https://wa.me/6282288591214?text=Halo%20JI.TECH,%20saya%20ingin%20booking%20rental%20mobil" 
+        <a href="https://wa.me/6282288591214?text=Halo%20MR.BUDDY,%20saya%20ingin%20booking%20rental%20mobil" 
            target="_blank"
            class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg transition-all">
           <i class="fab fa-whatsapp mr-2"></i>BOOKING VIA WHATSAPP
@@ -113,8 +125,9 @@
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Avanza -->
         <div class="bg-gray-800 rounded-xl overflow-hidden car-card border border-gray-700">
-          <div class="h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-            <span class="text-white text-lg font-bold">TOYOTA AVANZA</span>
+          <div class="h-48 bg-gray-700 overflow-hidden">
+            <img src="images/cars/avanza.jpg" 
+                 alt="Toyota Avanza" class="w-full h-full object-cover">
           </div>
           <div class="p-6">
             <h3 class="text-xl font-bold text-blue-400 mb-2">Toyota Avanza 2023</h3>
@@ -123,7 +136,7 @@
               <span class="text-2xl font-bold text-green-400">Rp 350.000</span>
               <span class="text-gray-400 text-sm ml-2">/ hari (include driver)</span>
             </div>
-            <a href="https://wa.me/6282288591214?text=Halo,%20saya%20mau%20sewa%20Toyota%20Avanza%202023" 
+            <a href="https://wa.me/6282288591214?text=Halo%20MR.BUDDY,%20saya%20mau%20sewa%20Toyota%20Avanza%202023" 
                target="_blank"
                class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-3 rounded-lg font-semibold transition-all">
               <i class="fab fa-whatsapp mr-2"></i>BOOKING SEKARANG
@@ -133,8 +146,9 @@
 
         <!-- Veloz -->
         <div class="bg-gray-800 rounded-xl overflow-hidden car-card border border-gray-700">
-          <div class="h-48 bg-gradient-to-br from-green-500 to-blue-600 flex items-center justify-center">
-            <span class="text-white text-lg font-bold">DAIHATSU VELOZ</span>
+          <div class="h-48 bg-gray-700 overflow-hidden">
+            <img src="images/cars/veloz.jpg" 
+                 alt="Daihatsu Veloz" class="w-full h-full object-cover">
           </div>
           <div class="p-6">
             <h3 class="text-xl font-bold text-blue-400 mb-2">Daihatsu Veloz 2023</h3>
@@ -143,7 +157,7 @@
               <span class="text-2xl font-bold text-green-400">Rp 400.000</span>
               <span class="text-gray-400 text-sm ml-2">/ hari (include driver)</span>
             </div>
-            <a href="https://wa.me/6282288591214?text=Halo,%20saya%20mau%20sewa%20Daihatsu%20Veloz%202023" 
+            <a href="https://wa.me/6282288591214?text=Halo%20MR.BUDDY,%20saya%20mau%20sewa%20Daihatsu%20Veloz%202023" 
                target="_blank"
                class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-3 rounded-lg font-semibold transition-all">
               <i class="fab fa-whatsapp mr-2"></i>BOOKING SEKARANG
@@ -153,8 +167,9 @@
 
         <!-- Ertiga -->
         <div class="bg-gray-800 rounded-xl overflow-hidden car-card border border-gray-700">
-          <div class="h-48 bg-gradient-to-br from-red-500 to-orange-600 flex items-center justify-center">
-            <span class="text-white text-lg font-bold">SUZUKI ERTIGA</span>
+          <div class="h-48 bg-gray-700 overflow-hidden">
+            <img src="images/cars/ertiga.jpg" 
+                 alt="Suzuki Ertiga" class="w-full h-full object-cover">
           </div>
           <div class="p-6">
             <h3 class="text-xl font-bold text-blue-400 mb-2">Suzuki Ertiga 2023</h3>
@@ -163,12 +178,154 @@
               <span class="text-2xl font-bold text-green-400">Rp 375.000</span>
               <span class="text-gray-400 text-sm ml-2">/ hari (include driver)</span>
             </div>
-            <a href="https://wa.me/6282288591214?text=Halo,%20saya%20mau%20sewa%20Suzuki%20Ertiga%202023" 
+            <a href="https://wa.me/6282288591214?text=Halo%20MR.BUDDY,%20saya%20mau%20sewa%20Suzuki%20Ertiga%202023" 
                target="_blank"
                class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-3 rounded-lg font-semibold transition-all">
               <i class="fab fa-whatsapp mr-2"></i>BOOKING SEKARANG
             </a>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTINASI WISATA -->
+  <section id="destinations" class="py-20 bg-gray-800">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-400 mb-4">DESTINASI WISATA</h2>
+      <p class="text-gray-400 text-center mb-12">Tempat-tempat yang sudah dikunjungi customer kami dan rekomendasi destinasi di Kepri</p>
+      
+      <!-- Tempat yang sudah dikunjungi customer -->
+      <div class="mb-16">
+        <h3 class="text-2xl font-bold text-center text-white mb-8">Tempat yang Sudah Dikunjungi Customer Kami</h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Destinasi 1 -->
+          <div class="bg-gray-900 rounded-xl overflow-hidden visited-card">
+            <div class="h-40 overflow-hidden">
+              <img src="images/destinations/barelang.jpg" 
+                   alt="Jembatan Barelang" class="w-full h-full object-cover">
+            </div>
+            <div class="p-4">
+              <h4 class="font-bold text-lg mb-2">Jembatan Barelang</h4>
+              <p class="text-gray-400 text-sm">Ikon Batam yang menghubungkan beberapa pulau dengan pemandangan laut yang menakjubkan</p>
+            </div>
+          </div>
+          
+          <!-- Destinasi 2 -->
+          <div class="bg-gray-900 rounded-xl overflow-hidden visited-card">
+            <div class="h-40 overflow-hidden">
+              <img src="images/destinations/nongsa.jpg" 
+                   alt="Pantai Nongsa" class="w-full h-full object-cover">
+            </div>
+            <div class="p-4">
+              <h4 class="font-bold text-lg mb-2">Pantai Nongsa</h4>
+              <p class="text-gray-400 text-sm">Pantai dengan pasir putih dan pemandangan sunset yang indah, cocok untuk keluarga</p>
+            </div>
+          </div>
+          
+          <!-- Destinasi 3 -->
+          <div class="bg-gray-900 rounded-xl overflow-hidden visited-card">
+            <div class="h-40 overflow-hidden">
+              <img src="images/destinations/habibie-ainun.jpg" 
+                   alt="Wisata Habibie Ainun" class="w-full h-full object-cover">
+            </div>
+            <div class="p-4">
+              <h4 class="font-bold text-lg mb-2">Wisata Habibie Ainun</h4>
+              <p class="text-gray-400 text-sm">Taman yang didedikasikan untuk kisah cinta BJ Habibie dan Ainun dengan pemandangan kota</p>
+            </div>
+          </div>
+          
+          <!-- Destinasi 4 -->
+          <div class="bg-gray-900 rounded-xl overflow-hidden visited-card">
+            <div class="h-40 overflow-hidden">
+              <img src="images/destinations/mall.jpg" 
+                   alt="Mahameriah Mall" class="w-full h-full object-cover">
+            </div>
+            <div class="p-4">
+              <h4 class="font-bold text-lg mb-2">Mahameriah Mall</h4>
+              <p class="text-gray-400 text-sm">Pusat perbelanjaan terbesar di Batam dengan berbagai toko, restoran, dan hiburan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Rekomendasi destinasi di Kepri -->
+      <div>
+        <h3 class="text-2xl font-bold text-center text-white mb-8">Rekomendasi Destinasi di Kepri</h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Rekomendasi 1 -->
+          <div class="bg-gray-900 rounded-xl overflow-hidden destination-card">
+            <div class="h-48 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=600&q=80" 
+                   alt="Pulau Abang" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <h4 class="font-bold text-xl mb-2 text-blue-400">Pulau Abang</h4>
+              <p class="text-gray-400 mb-4">Surga tersembunyi dengan pantai pasir putih dan air laut yang jernih, cocok untuk snorkeling</p>
+              <div class="flex justify-between items-center">
+                <span class="text-yellow-400">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </span>
+                <span class="text-sm text-gray-400">4.5/5</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Rekomendasi 2 -->
+          <div class="bg-gray-900 rounded-xl overflow-hidden destination-card">
+            <div class="h-48 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1513326738677-b964603b136d?auto=format&fit=crop&w=600&q=80" 
+                   alt="Vihara Ksitigarbha Bodhisattva" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <h4 class="font-bold text-xl mb-2 text-blue-400">Vihara Ksitigarbha Bodhisattva</h4>
+              <p class="text-gray-400 mb-4">Vihara terbesar di Asia Tenggara dengan arsitektur megah dan pemandangan yang menakjubkan</p>
+              <div class="flex justify-between items-center">
+                <span class="text-yellow-400">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="text-sm text-gray-400">5/5</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Rekomendasi 3 -->
+          <div class="bg-gray-900 rounded-xl overflow-hidden destination-card">
+            <div class="h-48 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80" 
+                   alt="Pulau Galang" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <h4 class="font-bold text-xl mb-2 text-blue-400">Pulau Galang</h4>
+              <p class="text-gray-400 mb-4">Pulau bersejarah dengan kamp pengungsi Vietnam dan pantai yang masih alami</p>
+              <div class="flex justify-between items-center">
+                <span class="text-yellow-400">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+                <span class="text-sm text-gray-400">4/5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-12">
+          <a href="https://wa.me/6282288591214?text=Halo%20MR.BUDDY,%20saya%20ingin%20konsultasi%20tentang%20destinasi%20wisata%20di%20Kepri" 
+             target="_blank"
+             class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all">
+            <i class="fas fa-map-marked-alt mr-2"></i>KONSULTASI DESTINASI WISATA
+          </a>
         </div>
       </div>
     </div>
@@ -210,11 +367,11 @@
     <div class="max-w-6xl mx-auto px-6 text-center">
       <div class="flex justify-center items-center space-x-3 mb-6">
         <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center">
-          <span class="font-bold text-white text-xl">JT</span>
+          <span class="font-bold text-white text-xl">MB</span>
         </div>
         <div class="text-left">
-          <h3 class="text-xl font-bold text-blue-400">JI.TECH</h3>
-          <p class="text-sm text-gray-400">Travel & Rent Car</p>
+          <h3 class="text-xl font-bold text-blue-400">MR.BUDDY</h3>
+          <p class="text-sm text-gray-400">Transport Batam</p>
         </div>
       </div>
       
@@ -225,10 +382,11 @@
         <a href="#about" class="text-gray-400 hover:text-blue-400">Tentang</a>
         <a href="#services" class="text-gray-400 hover:text-blue-400">Layanan</a>
         <a href="#cars" class="text-gray-400 hover:text-blue-400">Armada</a>
+        <a href="#destinations" class="text-gray-400 hover:text-blue-400">Destinasi</a>
         <a href="#contact" class="text-gray-400 hover:text-blue-400">Kontak</a>
       </div>
       
-      <p class="text-gray-500 text-sm">&copy; 2024 JI.TECH - Travel & Rent Car. All rights reserved.</p>
+      <p class="text-gray-500 text-sm">&copy; 2025 MR.BUDDY - Transport Batam. All rights reserved.</p>
     </div>
   </footer>
 
